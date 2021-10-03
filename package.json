@@ -21,7 +21,7 @@
     "webpack-cli": "^4.8.0"
   },
   "scripts": {
-    "dev": "webpack --mode development ./notemanager/frontend/src/index.js --output-path ./notemanager/frontend/static/frontend",
+    "dev": "webpack --mode development --watch ./notemanager/frontend/src/index.js --output-path ./notemanager/frontend/static/frontend",
     "build": "webpack --mode production ./notemanager/frontend/src/index.js --output-path ./notemanager/frontend/static/frontend"
   },
   "keywords": [],
