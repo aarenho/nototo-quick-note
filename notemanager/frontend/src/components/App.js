@@ -5,11 +5,11 @@ class App extends Component {
     render() {
         return (
             <div className="container"> 
-                <div>
-                    Text Area
+                <div className="note-box">
+                    lorem
                 </div>
                 <div>
-                    Submit
+                    Submitfasdfasd
                 </div>
             </div>
         )
