@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  margin: 30px auto;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}

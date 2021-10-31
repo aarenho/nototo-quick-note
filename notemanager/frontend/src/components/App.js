@@ -3,7 +3,16 @@ import ReactDOM from 'react-dom';
 
 class App extends Component {
     render() {
-        return <h1>React App</h1>
+        return (
+            <div className="container"> 
+                <div>
+                    Text Area
+                </div>
+                <div>
+                    Submit
+                </div>
+            </div>
+        )
     }
 }
 
