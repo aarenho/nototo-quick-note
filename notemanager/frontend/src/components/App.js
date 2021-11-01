@@ -6,10 +6,10 @@ class App extends Component {
         return (
             <div className="container"> 
                 <div className="note-box">
-                    lorem
+                    Type here...
                 </div>
-                <div>
-                    Submitfasdfasd
+                <div className="submit-button">
+                    SUBMIT
                 </div>
             </div>
         )
