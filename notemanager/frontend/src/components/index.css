@@ -40,3 +40,13 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
+.input-field {
+  display: flex;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  flex-grow: 1;
+  font-size: medium;
+  text-align: left;
+}

@@ -6,7 +6,7 @@ class App extends Component {
         return (
             <div className="container"> 
                 <div className="note-box">
-                    Type here...
+                    <input className="input-field" type="text"/>
                 </div>
                 <div className="submit-button">
                     SUBMIT
