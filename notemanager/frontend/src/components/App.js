@@ -30,7 +30,9 @@ const App = () => {
     }
 
     const addNote = (text) => {
-
+        const id = Math.floor(Math.random() * 10000) + 1
+        const newNote = { id, ...note }
+        setNote([...note, newNotes])
     }
 
     return (
