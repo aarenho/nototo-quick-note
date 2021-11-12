@@ -27,8 +27,12 @@ const App = () => {
 
         // onAdd({ text })
         setText('')
-        window.render()
     }
+
+    const addNote = (text) => {
+
+    }
+
     return (
         <div className="container"> 
             <div className="note-box">
