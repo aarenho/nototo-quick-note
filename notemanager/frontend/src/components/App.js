@@ -18,19 +18,23 @@ import ReactDOM from 'react-dom';
 
 const App = () => {
 
-    const [text, setText] = useState('')
+    const [note, setNote] = useState('')
     
     const onClick = (e) => {
-        if(!text) {
+        if(!note) {
             alert('Can\'t have an empty note!')
         }
 
-        addNote({ text })
-        setText('')
+        addNote({ note })
+        setNote('')
     }
 
     const addNote = async (note) => {
-        const res = await fetch('https://localhost:8000/api/notes', {
+
+        // const res = JSON.stringify(note)
+        // console.log(note)
+        // console.log(res)
+        const res = await fetch('http://localhost:8000/api/notes/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -45,7 +49,7 @@ const App = () => {
     return (
         <div className="container"> 
             <div className="note-box">
-                <textarea className="input-field" placeholder="Type note here..." value={text} onChange={(e) => setText(e.target.value)}/>
+                <textarea className="input-field" placeholder="Type note here..." value={note} onChange={(e) => setNote(e.target.value)}/>
             </div>
             <div className="submit-button" onClick={onClick}>
                 SUBMIT
