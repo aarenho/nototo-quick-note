@@ -29,10 +29,8 @@ const App = () => {
         setText('')
     }
 
-    const addNote = (text) => {
-        const id = Math.floor(Math.random() * 10000) + 1
-        const newNote = { id, ...note }
-        setNote([...note, newNote])
+    const addNote = async (note) => {
+        console.log(note)
     }
 
     return (
