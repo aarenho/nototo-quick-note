@@ -25,12 +25,21 @@ const App = () => {
             alert('Can\'t have an empty note!')
         }
 
-        // onAdd({ text })
+        addNote({ text })
         setText('')
     }
 
     const addNote = async (note) => {
-        console.log(note)
+        const res = await fetch('https://localhost:8000/api/notes', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(note)
+        })
+        
+        const data = await res.json()
+        console.log(data)
     }
 
     return (
